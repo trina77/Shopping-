@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Biriyani",
+        "price": 300,
+        "image": "/biriyani.jpg",
+        "quantity": 1
+    },
+    {
+        "id": 2,
+        "name": "Burger",
+        "price": 250,
+        "image": "/burger.jpg",
+        "quantity": 1
+    },
+    {
+        "id": 3,
+        "name": "chocolate",
+        "price": 100,
+        "image": "/chocolate.jpg",
+        "quantity": 1
+    },
+    {
+        "id": 4,
+        "name": "tandoori",
+        "price": 799,
+        "image": "/tandoori.jpg",
+        "quantity": 1
+    }
+]

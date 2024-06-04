@@ -1,5 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Product from "@/components/Product";
+import data from "../data.json";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +14,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar />
+
+        <section className=" container mx-auto">
+          <h1 className="text-4xl mt-4 text-center"> Our Products</h1>
+          <div className="mt-4 grid grid-cols-1 pl-5 md:grid-cols-4 gap-4">
+            {data.map((product) => (
+              <Product product={product} />
+            ))}
+          </div>
+        </section>
+
+        
+        {children}
+      </body>
     </html>
   );
 }
