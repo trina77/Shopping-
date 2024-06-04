@@ -23,7 +23,7 @@ const Navbar = () => {
                     <Link href="/cart">
                         <div>
                             <FiShoppingCart />
-                            <span className='absolute -top-2 -right-2 text-[13px] bg-red-600 h-[18px] w-[18px] rounded-full grid place-items-center text-white'>0</span>
+                            <span className='absolute -top-2 -right-3 text-[13px] bg-red-600 h-[18px] w-[18px] rounded-full grid place-items-center text-white'>0</span>
                         </div>
                     </Link>
                 </div>
